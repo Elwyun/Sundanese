@@ -65,8 +65,8 @@ Until then, the URLs are placeholders:
 **App name**: `Sundanese` (9 characters) — chosen
 
 Alternatives considered: `Sunda` (5), `Aksara` (6).
-The in-app heading stays "Aksara Sunda" (descriptive); the listing name is
-"Sundanese".
+The name "Sundanese" is used consistently: the in-app heading, the support
+pages, the featured image, and the marketplace listing name.
 
 **Short description** (one sentence, sentence case, no trailing punctuation,
 plain text, no emojis):
@@ -80,6 +80,16 @@ Convert Latin text into Sundanese script and add it to your design as editable t
 ```
 Converts Latin text into Sundanese script (Aksara Sunda Baku) and adds the result to your design as editable text. It also converts Sundanese script back into Latin. You can choose a Sundanese font from Canva's font library and apply a preset text style before adding text. The app runs entirely in your browser, with no account or server required.
 ```
+
+### Translations
+
+Canva translates apps for free after review — **developers can't upload their
+own translations**. The Developer Portal only accepts the English source file,
+`dist/messages_en.json` (produced by `npm run build`).
+
+`submission/messages_id.json` is an Indonesian reference translation kept for
+your own review only. It is **not** uploaded to the portal and Canva does not
+read it.
 
 ## 4. Pre-submission checklist
 
@@ -104,7 +114,7 @@ Converts Latin text into Sundanese script (Aksara Sunda Baku) and adds the resul
 - [x] No localhost URL in the app config (backend vars removed)
 - [x] App ID / app origin set in `.env`
 - [x] Production build passes and is under size limits
-- [ ] Upload UI strings for translation (Developer Portal, from `dist/messages_en.json`)
+- [ ] Upload UI strings for translation (Developer Portal → Code upload → Translations, drop `dist/messages_en.json`)
 - [ ] Read and accept Canva Terms of Use and Canva Developer Terms
 
 ### Build and submit

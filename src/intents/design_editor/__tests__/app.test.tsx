@@ -27,7 +27,7 @@ describe("Aksara Sunda Tests", () => {
   it("should render the app title and mode selector", () => {
     renderInTestProvider(<App />);
 
-    expect(screen.getByText("Aksara Sunda")).toBeTruthy();
+    expect(screen.getByText("Sundanese")).toBeTruthy();
     expect(screen.getByText("Latin → Sunda")).toBeTruthy();
     expect(screen.getByText("Sunda → Latin")).toBeTruthy();
   });

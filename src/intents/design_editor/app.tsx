@@ -169,7 +169,7 @@ export const App = () => {
       <Rows spacing="3u">
         <Title size="small">
           {intl.formatMessage({
-            defaultMessage: "Aksara Sunda",
+            defaultMessage: "Sundanese",
             description: "App title",
           })}
         </Title>

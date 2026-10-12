@@ -1,4 +1,4 @@
-# Aksara Sunda — Canva App
+# Sundanese — Canva App
 
 Aplikasi Canva yang mengonversi teks Latin ⇄ Aksara Sunda (Baku) dan
 menambahkannya ke desain sebagai teks yang dapat diedit.
@@ -13,9 +13,12 @@ menambahkannya ke desain sebagai teks yang dapat diedit.
 - **100% client-side**: tanpa backend, tanpa server, tanpa akun tambahan
 - **App UI Kit**: tema light/dark otomatis, terjemahan UI via react-intl
 
-> **Catatan i18n**: `defaultMessage` ditulis dalam **bahasa Inggris** (base language
-> untuk submission). Terjemahan Indonesia disiapkan sebagai file terpisah dan
-> diunggah lewat Developer Portal.
+> **Catatan i18n**: `defaultMessage` ditulis dalam **bahasa Inggris** (base language).
+> Saat submit, Developer Portal hanya menerima `dist/messages_en.json`. Canva yang
+> menerjemahkan ke bahasa lain (termasuk Indonesia) secara gratis setelah app
+> disetujui — developer tidak bisa menyediakan terjemahan sendiri.
+>
+> Nama listing di Marketplace: **Sundanese** (aturan Canva: < 10 karakter).
 
 ## Teknologi
 - React 19 + TypeScript (strict)
@@ -34,7 +37,7 @@ npm test           # jest
 
 ## Preview di Canva
 1. Login Canva CLI: `canva login`
-2. Buat app: `canva apps create "Aksara Sunda" --distribution=public`
+2. Buat app: `canva apps create "Sundanese" --distribution=public`
 3. Isi `CANVA_APP_ID` dan `CANVA_APP_ORIGIN` di `.env`
 4. `npm start` lalu klik "Preview" di Developer Portal
 

@@ -1,0 +1,114 @@
+{
+  "/BOS5W": {
+    "defaultMessage": "Bunyi asing (f, q, v, x, z, kh, sy) memiliki pemetaan tersendiri.",
+    "description": "Transliteration rule about foreign sounds"
+  },
+  "2XZ0IQ": {
+    "defaultMessage": "Pilih font",
+    "description": "Button to open the font picker"
+  },
+  "3NpDoW": {
+    "defaultMessage": "Tambahkan ke desain",
+    "description": "Button to add the converted text to the design"
+  },
+  "41wzoP": {
+    "defaultMessage": "Gaya teks",
+    "description": "Label for the preset style selector"
+  },
+  "5XePFF": {
+    "defaultMessage": "Ketik teks lalu tekan Konversi. Hasilnya akan tampil di sini.",
+    "description": "Empty state helper text"
+  },
+  "C1OxUe": {
+    "defaultMessage": "Tanpa gaya",
+    "description": "Preset option: no styling applied"
+  },
+  "FlcMOY": {
+    "defaultMessage": "Sundanese",
+    "description": "App title"
+  },
+  "HNn4eM": {
+    "defaultMessage": "Hasil aksara Sunda",
+    "description": "Label for the Sundanese script output preview"
+  },
+  "J2LOvG": {
+    "defaultMessage": "Tidak dapat membuka pemilih font. Silakan coba lagi.",
+    "description": "Error shown when the font picker fails to open"
+  },
+  "J6209c": {
+    "defaultMessage": "Teks Latin",
+    "description": "Label for the Latin text input field"
+  },
+  "SmQonc": {
+    "defaultMessage": "Rarangkén adalah tanda vokal yang ditambahkan pada konsonan (pi → ᮕᮤ, pu → ᮕᮥ).",
+    "description": "Transliteration rule about vowel marks"
+  },
+  "T4V6SU": {
+    "defaultMessage": "Keterangan kecil",
+    "description": "Preset option: small caption text"
+  },
+  "WwS/Bd": {
+    "defaultMessage": "Konsonan tanpa vokal ditutup dengan pamaéh (p → ᮕ᮪).",
+    "description": "Transliteration rule about dead consonants"
+  },
+  "XKdh7Z": {
+    "defaultMessage": "Pratinjau font terpilih: {font}",
+    "description": "Alt text for the selected font preview image"
+  },
+  "ZYaX++": {
+    "defaultMessage": "Aturan transliterasi",
+    "description": "Title of the transliteration rules section"
+  },
+  "dg0zEg": {
+    "defaultMessage": "Aksara Sunda",
+    "description": "Label for the Sundanese script input field"
+  },
+  "e02FNa": {
+    "defaultMessage": "Sunda → Latin",
+    "description": "Mode option: Sundanese to Latin"
+  },
+  "gu/zBu": {
+    "defaultMessage": "Angka otomatis dibungkus tanda pipe (17 → |᮱᮷|).",
+    "description": "Transliteration rule about numbers"
+  },
+  "kndKxp": {
+    "defaultMessage": "Gagal menambahkan teks ke desain Anda. Silakan coba lagi.",
+    "description": "Error shown when adding the text to the design fails"
+  },
+  "mBZMIk": {
+    "defaultMessage": "Latin → Sunda",
+    "description": "Mode option: Latin to Sundanese"
+  },
+  "mosaky": {
+    "defaultMessage": "Konversi",
+    "description": "Button to convert the input text"
+  },
+  "or0MXv": {
+    "defaultMessage": "Hasil Latin",
+    "description": "Label for the Latin output preview"
+  },
+  "qBVsm7": {
+    "defaultMessage": "Ketik teks di sini…",
+    "description": "Placeholder for the text input"
+  },
+  "rmm1u2": {
+    "defaultMessage": "Judul undangan",
+    "description": "Preset option: large centered title"
+  },
+  "sgryRW": {
+    "defaultMessage": "Teks isi",
+    "description": "Preset option: regular body text"
+  },
+  "wPx4tr": {
+    "defaultMessage": "Bersihkan",
+    "description": "Button to clear the input and output"
+  },
+  "wvPnMr": {
+    "defaultMessage": "Ngalagéna adalah konsonan dasar (pa → ᮕ).",
+    "description": "Transliteration rule about base consonants"
+  },
+  "yS0EPW": {
+    "defaultMessage": "Konversi gagal. Pastikan teks mengikuti aturan transliterasi Aksara Sunda.",
+    "description": "Error shown when the text conversion fails"
+  }
+}
