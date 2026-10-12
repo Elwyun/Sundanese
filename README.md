@@ -7,8 +7,15 @@ menambahkannya ke desain sebagai teks yang dapat diedit.
 - **Dua arah**: Latin → Aksara Sunda dan Aksara Sunda → Latin
 - **Font picker**: pilih font Sunda dari library Canva (Noto Sans Sundanese)
 - **Tambah ke desain**: hasil konversi menjadi text element yang dapat diedit
+- **Preset styling**: pilih gaya teks (No style / Invitation title / Body text / Small caption)
+- **Aturan transliterasi**: panduan singkat aturan dasar (collapsible)
+- **Error handling**: konversi, pemilihan font, dan tambah ke desain aman dari kegagalan
 - **100% client-side**: tanpa backend, tanpa server, tanpa akun tambahan
 - **App UI Kit**: tema light/dark otomatis, terjemahan UI via react-intl
+
+> **Catatan i18n**: `defaultMessage` ditulis dalam **bahasa Inggris** (base language
+> untuk submission). Terjemahan Indonesia disiapkan sebagai file terpisah dan
+> diunggah lewat Developer Portal.
 
 ## Teknologi
 - React 19 + TypeScript (strict)

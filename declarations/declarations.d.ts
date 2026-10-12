@@ -34,22 +34,13 @@ declare module "*.svg?react" {
 
 declare const BACKEND_HOST: string;
 
+/*
+  sunda.js ships its own types (dist/types/index.d.ts), but its package.json
+  "exports" map has no "types" condition, so TypeScript with
+  moduleResolution: "bundler" can't resolve them (error TS7016). This
+  declaration supplies the types for the API this app imports.
+*/
 declare module "sunda.js" {
   export const toSundanese: (input: string) => string;
   export const toLatin: (input: string) => string;
-  export class SundaHelper {
-    static getMain(char: string | null | undefined): string;
-    static getSonorant(char: string | null | undefined): string;
-    static getRarangken(char: string | null | undefined): string;
-    static getFinal(char: string | null | undefined): string;
-    static getNumber(char: string | null | undefined): string;
-  }
-  export class LatinHelper {
-    static getMain(char: string | null | undefined): string;
-    static getSonorant(char: string | null | undefined): string;
-    static getRarangken(char: string | null | undefined): string;
-    static getFinal(char: string | null | undefined): string;
-    static getNumber(char: string | null | undefined): string;
-  }
 }
-
