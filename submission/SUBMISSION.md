@@ -62,10 +62,11 @@ Until then, the URLs are placeholders:
 > 12 characters, so it can't be used as the marketplace/listing name. The
 > in-app title can stay "Aksara Sunda".
 
-**App name** (pick one, <10 chars):
-- `Sunda` (5) — recommended
-- `Aksara` (6)
-- `Sundanese` (9)
+**App name**: `Sundanese` (9 characters) — chosen
+
+Alternatives considered: `Sunda` (5), `Aksara` (6).
+The in-app heading stays "Aksara Sunda" (descriptive); the listing name is
+"Sundanese".
 
 **Short description** (one sentence, sentence case, no trailing punctuation,
 plain text, no emojis):
