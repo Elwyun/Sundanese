@@ -91,30 +91,38 @@ read it.
 
 ## 4. Pre-submission checklist
 
+### Repository and hosting
+- [x] Repository pushed to GitHub (`Elwyun/Sundanese`)
+- [x] GitHub Pages enabled (Source: GitHub Actions) and deployed
+- [x] Single app folder (duplicate project removed)
+- [x] Commit history contains no AI attribution
+
 ### Product
 - [x] 100% client-side, no backend, no accounts
-- [x] Core functionality works (two-way conversion, add to design)
+- [x] Core functionality works (two-way conversion, add to design) — covered by unit tests
 - [x] App UI Kit used (light/dark theme support)
 - [x] Feature support handled (`useFeatureSupport` gates buttons)
 - [x] Loading / disabled state while adding to design
 - [x] Error handling with a dismissible `Alert`
 - [x] Translation rules shown in-app
-- [ ] Manually test in Canva: light + dark theme, Presentation / Docs / Post
-- [ ] Choose a Sundanese font before "Add to design" (avoids tofu in the design)
+- [x] Sundanese glyphs render in the app preview (font bundled)
+- [ ] _Manual step_: test in Canva — light + dark theme, Presentation / Docs / Post
+- [ ] _Manual step_: choose a Sundanese font before "Add to design" (avoids tofu in the design)
 
 ### Assets and links
-- [x] App icon (512×512)
-- [x] Featured image (2400×1800)
+- [x] App icon (512×512, no transparency)
+- [x] Featured image (2400×1800, 4:3)
 - [x] Support / privacy / terms pages written
 - [x] Support pages hosted on GitHub Pages
-- [ ] Paste the 3 support URLs into the portal
+- [ ] _Manual step_: paste the 3 support URLs into the portal
 
 ### Configuration
 - [x] No localhost URL in the app config (backend vars removed)
-- [x] App ID / app origin set in `.env`
+- [x] App ID / app origin set in `.env` (not committed)
 - [x] Production build passes and is under size limits
-- [ ] Upload UI strings for translation (Developer Portal → Code upload → Translations, drop `dist/messages_en.json`)
-- [ ] Read and accept Canva Terms of Use and Canva Developer Terms
+- [x] UI strings in English (base language); `dist/messages_en.json` generated
+- [ ] _Manual step_: upload `dist/messages_en.json` (Developer Portal → Code upload → Translations)
+- [ ] _Manual step_: read and accept the Canva Terms of Use and Developer Terms
 
 ### Build and submit
 
@@ -125,7 +133,10 @@ npm test             # jest
 npm run build        # dist/app.js + dist/messages_en.json
 ```
 
-Then in the Developer Portal: **Submit for review**.
+- [x] `npm run lint:check` (eslint + tsc)
+- [x] `npm test` (jest, 5 passing)
+- [x] `npm run build` (dist/app.js + dist/messages_en.json)
+- [ ] _Manual step_: **Submit for review** in the Developer Portal
 
 ## 5. Reference
 
