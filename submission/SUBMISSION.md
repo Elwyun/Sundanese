@@ -1,0 +1,125 @@
+# Submission pack — Aksara Sunda (Canva App)
+
+Everything needed to submit the app for review in the Canva Developer Portal.
+
+## 1. Visual assets (ready)
+
+| Asset | File | Spec (Canva requirement) | Status |
+| --- | --- | --- | --- |
+| App icon | `submission/app-icon-512.png` | 512 × 512, 1:1, full-bleed, no transparency, no corner radius | ✅ 512×512, RGB (no alpha) |
+| Featured image | `submission/featured-image-2400x1800.png` | 2400 × 1800, 4:3 | ✅ 2400×1800, RGB (no alpha) |
+
+- Source files: `submission/app-icon.html` and `submission/featured-image.html`.
+- Re-render after editing either source:
+
+  ```bash
+  CHROME="/c/Program Files/Google/Chrome/Application/chrome.exe"
+  cd submission
+  "$CHROME" --headless=new --disable-gpu --hide-scrollbars \
+    --allow-file-access-from-files --force-device-scale-factor=1 \
+    --window-size=512,512 \
+    --screenshot="$(pwd)/app-icon-512.png" \
+    "file://$(pwd)/app-icon.html"
+
+  "$CHROME" --headless=new --disable-gpu --hide-scrollbars \
+    --allow-file-access-from-files --force-device-scale-factor=1 \
+    --window-size=2400,1800 \
+    --screenshot="$(pwd)/featured-image-2400x1800.png" \
+    "file://$(pwd)/featured-image.html"
+  ```
+
+> **Note**: the icons are rendered with the bundled Noto Sans Sundanese font so
+> the Sundanese glyphs render correctly. The font is SIL OFL 1.1 (`assets/OFL.txt`).
+
+## 2. Support and policy pages (ready)
+
+Static site in `support-pages/`:
+
+- `index.html` — landing
+- `support.html` — how to use + contact
+- `privacy.html` — no data collection
+- `terms.html` — terms of use
+- `style.css`
+
+Deploy to GitHub Pages (or any static host):
+
+1. Push this repo to GitHub.
+2. Repository → Settings → Pages → Source: **Deploy from a branch**.
+3. Branch: `main`, folder: **`/aksara-sunda/support-pages`** (or move the
+   folder to the repo root if the app isn't in a subfolder).
+4. Record the three URLs and paste them into the Developer Portal under
+   **Release → App listing details → App support and links**.
+
+Until then, the URLs are placeholders:
+
+- Support: `https://<user>.github.io/<repo>/support.html`
+- Privacy: `https://<user>.github.io/<repo>/privacy.html`
+- Terms: `https://<user>.github.io/<repo>/terms.html`
+
+## 3. Listing copy
+
+> ⚠️ **App name must be under 10 characters** (Canva rule). "Aksara Sunda" is
+> 12 characters, so it can't be used as the marketplace/listing name. The
+> in-app title can stay "Aksara Sunda".
+
+**App name** (pick one, <10 chars):
+- `Sunda` (5) — recommended
+- `Aksara` (6)
+- `Sundanese` (9)
+
+**Short description** (one sentence, sentence case, no trailing punctuation,
+plain text, no emojis):
+
+```
+Convert Latin text into Sundanese script and add it to your design as editable text
+```
+
+**Description** (multiple sentences, ends with punctuation, no marketing claims):
+
+```
+Converts Latin text into Sundanese script (Aksara Sunda Baku) and adds the result to your design as editable text. It also converts Sundanese script back into Latin. You can choose a Sundanese font from Canva's font library and apply a preset text style before adding text. The app runs entirely in your browser, with no account or server required.
+```
+
+## 4. Pre-submission checklist
+
+### Product
+- [x] 100% client-side, no backend, no accounts
+- [x] Core functionality works (two-way conversion, add to design)
+- [x] App UI Kit used (light/dark theme support)
+- [x] Feature support handled (`useFeatureSupport` gates buttons)
+- [x] Loading / disabled state while adding to design
+- [x] Error handling with a dismissible `Alert`
+- [x] Translation rules shown in-app
+- [ ] Manually test in Canva: light + dark theme, Presentation / Docs / Post
+- [ ] Choose a Sundanese font before "Add to design" (avoids tofu in the design)
+
+### Assets and links
+- [x] App icon (512×512)
+- [x] Featured image (2400×1800)
+- [x] Support / privacy / terms pages written
+- [ ] Host the support pages and paste the 3 URLs into the portal
+
+### Configuration
+- [x] No localhost URL in the app config (backend vars removed)
+- [x] App ID / app origin set in `.env`
+- [x] Production build passes and is under size limits
+- [ ] Upload UI strings for translation (Developer Portal, from `dist/messages_en.json`)
+- [ ] Read and accept Canva Terms of Use and Canva Developer Terms
+
+### Build and submit
+
+```bash
+cd aksara-sunda
+npm run lint:check   # eslint + tsc
+npm test             # jest
+npm run build        # dist/app.js + dist/messages_en.json
+```
+
+Then in the Developer Portal: **Submit for review**.
+
+## 5. Reference
+
+- App icon guidelines: https://www.canva.dev/docs/apps/app-listing-guidelines/app-icon/
+- Featured image guidelines: https://www.canva.dev/docs/apps/app-listing-guidelines/featured-image/
+- Written content guidelines: https://www.canva.dev/docs/apps/app-listing-guidelines/written-content/
+- Submission checklist: https://www.canva.dev/docs/apps/submission-checklist/

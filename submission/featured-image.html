@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aksara Sunda featured image</title>
+    <style>
+      @font-face {
+        font-family: "Noto Sans Sundanese";
+        src: url("../assets/NotoSansSundanese-Regular.ttf") format("truetype");
+        font-weight: 400;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 2400px;
+        height: 1800px;
+        overflow: hidden;
+      }
+
+      .canvas {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 2400px;
+        height: 1800px;
+        padding: 140px;
+        background: #f4f2ff;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        font-size: 56px;
+        font-weight: 700;
+        color: #2a1a5e;
+      }
+
+      .brand .mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 96px;
+        height: 96px;
+        border-radius: 24px;
+        background: #2a1a5e;
+        color: #d2ffe6;
+        font-family: "Noto Sans Sundanese", sans-serif;
+        font-size: 60px;
+      }
+
+      .stage {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        gap: 90px;
+      }
+
+      .panel {
+        box-sizing: border-box;
+        flex: 1;
+        padding: 90px;
+        border-radius: 48px;
+      }
+
+      .panel .label {
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        opacity: 0.6;
+      }
+
+      .panel .value {
+        margin-top: 44px;
+        line-height: 1.15;
+        word-break: break-word;
+      }
+
+      .panel.latin {
+        background: #ffffff;
+        color: #2a1a5e;
+      }
+
+      .panel.latin .value {
+        font-size: 104px;
+        font-weight: 700;
+      }
+
+      .panel.sunda {
+        background: #2a1a5e;
+        color: #d2ffe6;
+      }
+
+      .panel.sunda .value {
+        font-family: "Noto Sans Sundanese", sans-serif;
+        font-size: 118px;
+      }
+
+      .arrow {
+        font-size: 120px;
+        font-weight: 700;
+        color: #2a1a5e;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="brand">
+        <span class="mark">ᮃ</span>
+        <span>Aksara Sunda</span>
+      </div>
+
+      <div class="stage">
+        <div class="panel latin">
+          <div class="label">Latin</div>
+          <div class="value">wilujeng enjing</div>
+        </div>
+
+        <div class="arrow">&#8594;</div>
+
+        <div class="panel sunda">
+          <div class="label">Aksara Sunda</div>
+          <div class="value">ᮝᮤᮜᮥᮏᮨᮀ ᮈᮔ᮪ᮏᮤᮀ</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Aksara Sunda app icon</title>
+    <style>
+      @font-face {
+        font-family: "Noto Sans Sundanese";
+        src: url("../assets/NotoSansSundanese-Regular.ttf") format("truetype");
+        font-weight: 400;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 512px;
+        height: 512px;
+        overflow: hidden;
+      }
+
+      .icon {
+        display: flex;
+        width: 512px;
+        height: 512px;
+        /* Full-bleed square, no border radius, no transparency. */
+      }
+
+      .half {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+      }
+
+      .latin {
+        background: #2a1a5e;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        font-size: 300px;
+        line-height: 1;
+      }
+
+      .sunda {
+        background: #d2ffe6;
+        color: #2a1a5e;
+        font-family: "Noto Sans Sundanese", sans-serif;
+        font-size: 300px;
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="icon">
+      <div class="half latin">a</div>
+      <div class="half sunda">&#7075;</div>
+    </div>
+  </body>
+</html>
