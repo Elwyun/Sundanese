@@ -41,12 +41,24 @@ Static site in `support-pages/`:
 - `terms.html` — terms of use
 - `style.css`
 
-Deploy to GitHub Pages (or any static host):
+Deploy to GitHub Pages (or any static host). Two options:
+
+**Option A — GitHub Actions (included)**
+
+`.github/workflows/deploy-pages.yml` publishes `support-pages/` on every push
+to `main`.
 
 1. Push this repo to GitHub.
-2. Repository → Settings → Pages → Source: **Deploy from a branch**.
-3. Branch: `main`, folder: **`/aksara-sunda/support-pages`** (or move the
-   folder to the repo root if the app isn't in a subfolder).
+2. Repository → Settings → Pages → Source: **GitHub Actions**.
+3. Run the "Deploy support pages" workflow (or push a change under
+   `support-pages/`).
+
+**Option B — Deploy from a branch**
+
+1. Push this repo to GitHub.
+2. Settings → Pages → Source: **Deploy from a branch**.
+3. Branch `main`, folder `/support-pages` (adjust if the repo root differs).
+
 4. Record the three URLs and paste them into the Developer Portal under
    **Release → App listing details → App support and links**.
 
