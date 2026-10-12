@@ -1,8 +1,29 @@
+/*
+  Bundle Noto Sans Sundanese so the Sundanese script renders in the app
+  preview (the App UI Kit font has no Sundanese glyphs, which would show as
+  tofu boxes). The fonts are inlined into the bundle by the Canva bundler.
+  License: SIL Open Font License 1.1 — see assets/OFL.txt / OFL.txt.
+*/
+@font-face {
+  font-family: "Noto Sans Sundanese";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/NotoSansSundanese-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans Sundanese";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/NotoSansSundanese-Bold.ttf") format("truetype");
+}
+
 /* Read-only conversion preview */
 .preview {
   max-height: 160px;
   overflow-y: auto;
-  /* Fall back to a font that ships Sundanese glyphs when available. */
   font-family: "Noto Sans Sundanese", sans-serif;
 }
 
