@@ -1,4 +1,4 @@
-# Submission pack — Aksara Sunda (Canva App)
+# Submission pack — Sundanese (Canva App)
 
 Everything needed to submit the app for review in the Canva Developer Portal.
 
@@ -41,38 +41,24 @@ Static site in `support-pages/`:
 - `terms.html` — terms of use
 - `style.css`
 
-Deploy to GitHub Pages (or any static host). Two options:
+**Hosted on GitHub Pages** (enabled with the included workflow):
 
-**Option A — GitHub Actions (included)**
+- Repo: https://github.com/Elwyun/Sundanese
+- Support: https://elwyun.github.io/Sundanese/support.html
+- Privacy: https://elwyun.github.io/Sundanese/privacy.html
+- Terms: https://elwyun.github.io/Sundanese/terms.html
 
-`.github/workflows/deploy-pages.yml` publishes `support-pages/` on every push
-to `main`.
+Paste the three URLs into the Developer Portal under **Release → App listing
+details → App support and links**.
 
-1. Push this repo to GitHub.
-2. Repository → Settings → Pages → Source: **GitHub Actions**.
-3. Run the "Deploy support pages" workflow (or push a change under
-   `support-pages/`).
-
-**Option B — Deploy from a branch**
-
-1. Push this repo to GitHub.
-2. Settings → Pages → Source: **Deploy from a branch**.
-3. Branch `main`, folder `/support-pages` (adjust if the repo root differs).
-
-4. Record the three URLs and paste them into the Developer Portal under
-   **Release → App listing details → App support and links**.
-
-Until then, the URLs are placeholders:
-
-- Support: `https://<user>.github.io/<repo>/support.html`
-- Privacy: `https://<user>.github.io/<repo>/privacy.html`
-- Terms: `https://<user>.github.io/<repo>/terms.html`
+How it works: `.github/workflows/deploy-pages.yml` publishes `support-pages/`
+on every push to `main` (Pages → Source: GitHub Actions). To re-publish, push a
+change under `support-pages/` or run the "Deploy support pages" workflow.
 
 ## 3. Listing copy
 
 > ⚠️ **App name must be under 10 characters** (Canva rule). "Aksara Sunda" is
-> 12 characters, so it can't be used as the marketplace/listing name. The
-> in-app title can stay "Aksara Sunda".
+> 12 characters, so it can't be used as the marketplace/listing name.
 
 **App name**: `Sundanese` (9 characters) — chosen
 
@@ -120,7 +106,8 @@ read it.
 - [x] App icon (512×512)
 - [x] Featured image (2400×1800)
 - [x] Support / privacy / terms pages written
-- [ ] Host the support pages and paste the 3 URLs into the portal
+- [x] Support pages hosted on GitHub Pages
+- [ ] Paste the 3 support URLs into the portal
 
 ### Configuration
 - [x] No localhost URL in the app config (backend vars removed)
